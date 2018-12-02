@@ -9,6 +9,7 @@ TagManager:
   - button3
   - button4
   - buttoner
+  - enemy
   layers:
   - Default
   - TransparentFX

@@ -15,6 +15,9 @@ public class PlayerScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if(abilities.Count == 0) {
+			abilities = GameManage.currentAbilities;
+		}
 		Vector3 move = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
      	transform.position += move * speed * Time.deltaTime;
 		foreach(Ability a in abilities) {

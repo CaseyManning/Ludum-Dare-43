@@ -15,10 +15,11 @@ public class GameManage : MonoBehaviour {
 		startingAbilities.Add(new BasicAttack());
 		startingAbilities.Add(new BasicAttack());
 		currentAbilities= new List<Ability>(startingAbilities);
+		DontDestroyOnLoad(gameObject);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		DontDestroyOnLoad(gameObject);
+		
 	}
 }
