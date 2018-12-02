@@ -19,7 +19,7 @@ public class PlayerScript : MonoBehaviour {
      	transform.position += move * speed * Time.deltaTime;
 		foreach(Ability a in abilities) {
 			if(Input.GetKeyDown(a.castKey)) {
-				a.activate(transform.position, Input.mousePosition, gameObject);
+				a.activate(transform.position, new Vector3 (Camera.main.ScreenToWorldPoint(Input.mousePosition).x, Camera.main.ScreenToWorldPoint(Input.mousePosition).y, 0), gameObject);
 			}
 		}
 	}
