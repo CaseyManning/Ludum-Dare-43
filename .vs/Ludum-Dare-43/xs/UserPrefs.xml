@@ -1,0 +1,20 @@
+﻿<Properties StartupConfiguration="{45FB6D9C-9124-CF2D-3544-167642E0A7B8}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/EnemyScript.cs">
+    <Files>
+      <File FileName="Assets/BasicAttack.cs" Line="1" Column="1" />
+      <File FileName="Assets/Ability.cs" Line="1" Column="1" />
+      <File FileName="Assets/PlayerScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/BulletScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/ScriptButton.cs" Line="1" Column="1" />
+      <File FileName="Assets/ButtonScript.cs" Line="11" Column="66" />
+      <File FileName="Assets/EnemyScript.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
