@@ -8,12 +8,7 @@ public class ButtonScript : MonoBehaviour {
 	// Use this for initialization
 	public static Dictionary<string,int> buttonAbilities = new Dictionary<string, int>();
 	void Start () {
-		List<Ability> currentAbilities = new List<Ability>(PlayerScript.abilities);
-		currentAbilities.Add(new BasicAttack());
-		currentAbilities.Add(new BasicAttack());
-		currentAbilities.Add(new BasicAttack());
-		currentAbilities.Add(new BasicAttack());
-		PlayerScript.abilities = new List<Ability>(currentAbilities);
+		List<Ability> currentAbilities = new List<Ability>(GameManage.currentAbilities);
 		for(int i = 0; i < 4; i++) {
 			if(currentAbilities.Count == 0) {
 				Debug.LogError("aaaah no abilities");
@@ -34,7 +29,7 @@ public class ButtonScript : MonoBehaviour {
 	public void buttonPress(GameObject button) {
 		Debug.Log(button.tag);
 		Debug.Log("removing ability " + buttonAbilities[button.tag]);
-		PlayerScript.abilities.RemoveAt(buttonAbilities[button.tag]);
+		GameManage.currentAbilities.RemoveAt(buttonAbilities[button.tag]);
 		Debug.Log(button.tag);
 		SceneManager.LoadScene(0);
 	}

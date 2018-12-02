@@ -12,6 +12,6 @@ public class ScriptButton : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		gameObject.GetComponentInChildren<Text>().text = PlayerScript.abilities[ButtonScript.buttonAbilities[gameObject.tag]].abilityName;
+		gameObject.GetComponentInChildren<Text>().text = GameManage.currentAbilities[ButtonScript.buttonAbilities[gameObject.tag]].abilityName;
 	}
 }
