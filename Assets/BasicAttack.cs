@@ -4,7 +4,7 @@ using UnityEngine;
 
 public  class BasicAttack : Ability{ 
 
-	public BasicAttack(): base(1,1,"space") {
+	public BasicAttack(): base(2,1,"space") {
 
 	}
 

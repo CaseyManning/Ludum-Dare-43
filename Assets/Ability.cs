@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Ability: MonoBehaviour {
+public abstract class Ability: ScriptableObject {
 
 	public float cooldown;
+	public float currentCooldown;
 	public float manaCost;
 
 	public string castKey;
@@ -14,6 +15,7 @@ public abstract class Ability: MonoBehaviour {
 		this.cooldown = cooldown;
 		this.manaCost = cost;
 		this.castKey = key;
+		this.currentCooldown = cooldown;
 	}
 	
 }
