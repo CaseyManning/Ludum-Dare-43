@@ -10,9 +10,7 @@ public class PlayerScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		if(abilities.Count == 0) {
-			abilities.Add(new BasicAttack());
-		}
+		abilities = GameManage.currentAbilities;
 	}
 	
 	// Update is called once per frame
