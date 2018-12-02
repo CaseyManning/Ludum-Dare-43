@@ -6,11 +6,13 @@ public class PlayerScript : MonoBehaviour {
 
 	float speed = 5.0f;
 	int health = 5;
-	List<Ability> abilities = new List<Ability>();
+	public static List<Ability> abilities = new List<Ability>();
 
 	// Use this for initialization
 	void Start () {
-		abilities.Add(new BasicAttack());
+		if(abilities.Count == 0) {
+			abilities.Add(new BasicAttack());
+		}
 	}
 	
 	// Update is called once per frame
