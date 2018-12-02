@@ -8,7 +8,7 @@ public class BulletScript : MonoBehaviour {
 	public float speed = 5f;
 	// Use this for initialization
 	void Start () {
-		
+		 Destroy (gameObject, 3);
 	}
 	
 	// Update is called once per frame
